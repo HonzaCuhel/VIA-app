@@ -15,19 +15,36 @@
   <h1>VIA Semestral Web Application</h1>
   <p>Application name: StockInvHelp</p>
   <p>Author: Jan Čuhel</p>
-  <p>Address: <a href='https://stock-inv-help.herokuapp.com' target='_blank'>https://stock-inv-help.herokuapp.com</a></p>
+  <p>Web Application: <a href='https://stock-inv-help.herokuapp.com' target='_blank'>https://stock-inv-help.herokuapp.com</a></p>
+  <p>API: <a href='https://stock-news-sentiment.herokuapp.com/' target='_blank'>https://stock-news-sentiment.herokuapp.com/sentiment/</a></p>
 </div>
   
 <div class="container">
-  <div class="row">
-    <div class="col-sm-8">
+  <div class="row" style="margin-top: 40px;">
+    <div class="col-sm-6">
       <h3>Chosen API</h3>
-      <p>Stocks API: Alpha Vantage <a href="https://www.alphavantage.co" target="_blank">[Link]</a> (5 API requests per minute and 500 requests per day)</p>
-      <p>News API: NewsAPI <a href="https://newsapi.org/docs/get-started" target="_blank">[Link]</a> (100 requests per day)</p>
+      <ul>
+        <li>Stocks API: Alpha Vantage <a href="https://www.alphavantage.co" target="_blank">[Link]</a> (5 requests per minute, 500 per day)</li>
+        <!-- <p>News API: NewsAPI <a href="https://newsapi.org/docs/get-started" target="_blank">[Link]</a> (100 requests per day)</p> -->
+        <li>News API: Marketaux API <a href="https://www.marketaux.com/" target="_blank">[Link]</a> (100 requests per day)</li>
+      </ul>
     </div>
-    <div class="col-sm-4">
-      <h3>Links</h3>
-      <p>...</p>
+    <div class="col-sm-3">
+      <h3>Stack</h3>
+      <ul>
+        <li>React.js <a href="https://reactjs.org" target="_blank">[Link]</a></li>
+        <li>Python <a href="https://www.python.org" target="_blank">[Link]</a></li>
+        <li>Flask-RESTX <a href="https://flask-restx.readthedocs.io/en/latest/" target="_blank">[Link]</a></li>
+        <li>Heroku <a href="https://id.heroku.com/login" target="_blank">[Link]</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-3">
+      <h3>Libraries & Components</h3>
+      <ul>
+        <li>Sentiment - Vader NLTK <a href="https://www.nltk.org/_modules/nltk/sentiment/vader.html" target="_blank">[Link]</a></li>
+        <li>recharts for plotting <a href="https://recharts.org/en-US/" target="_blank">[Link]</a></li>
+        <li>react-select-search <a href="https://github.com/tbleckert/react-select-search" target="_blank">[Link]</a></li>
+      </ul>
     </div>
   </div>
   <div class="row">
@@ -47,16 +64,60 @@
       </ul>
     </div>
   </div>
-  <div class="row">
+  <div class="row" style="margin-top: 40px;">
     <div class="col align-self-center">
       <h3>Progress</h3>
       <ul class="list-group list-group-flush">
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          Update the template
+          Deploy final changes.
+          <span class="badge bg-primary rounded-pill">3.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Update UI (responsivity).
+          <span class="badge bg-primary rounded-pill">3.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Add the calling of the Sentiment API.
+          <span class="badge bg-primary rounded-pill">3.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Deploy the API.
+          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Create REST API via Flask-RESTX.
+          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Add the showing news.
+          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Change the news API.
+          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Change UI.
+          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Add the plotting of stock prices.
+          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Searching libraries and React components.
+          <span class="badge bg-primary rounded-pill">26.12.2021</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Deploy the template.
+          <span class="badge bg-primary rounded-pill">15.10.2021</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Update the template.
           <span class="badge bg-primary rounded-pill">13.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <label>Finding a React template[<a href='https://github.com/rajshekhar26/cleanfolio' target='_blank'>link</a>]</label>
+          <label>Finding a React template [<a href='https://github.com/rajshekhar26/cleanfolio' target='_blank'>link</a>]</label>
           <span class="badge bg-primary rounded-pill">13.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -73,6 +134,15 @@
         </li>
       </ul>
     </div>
+  </div>
+</div>
+<div class="footer-copyright" style="margin-top: 40px;">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12 text-center">
+  <p>Copyright Company Name © 2022. All rights reserved.</p>
+  </div>
+  </div>
   </div>
 </div>
 
