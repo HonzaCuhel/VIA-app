@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 <body>
 
@@ -19,9 +22,26 @@
   <p>API: <a href='https://stock-news-sentiment.herokuapp.com/' target='_blank'>https://stock-news-sentiment.herokuapp.com/sentiment/</a></p>
 </div>
   
-<div class="container">
+<div class="container" style="margin-top: 40px;">
+  <div class="row">
+    <div class="col align-self-center">
+      <h3>Task</h3>
+      <p>Implement a web application for helping users with stock investing. The app will have the following features:</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Plotting a stock price of a selected stock by the user.
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Show the latest news about the selected stock.
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Analyze and show the sentiment of the latest news about the selected stock.
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="row" style="margin-top: 40px;">
-    <div class="col-sm-6">
+    <div class="col-sm-6" >
       <h3>Chosen API</h3>
       <ul>
         <li>Stocks API: Alpha Vantage <a href="https://www.alphavantage.co" target="_blank">[Link]</a> (5 requests per minute, 500 per day)</li>
@@ -47,21 +67,47 @@
       </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="col align-self-center">
-      <h3>Task</h3>
-      <p>Implement a web application for helping users with stock investing. The app will have the following features:</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Plotting a stock price of a selected stock by the user.
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Show the latest news about the selected stock.
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Analyze and show the sentiment of the latest news about the selected stock.
-        </li>
-      </ul>
+  <h3 style="margin-top: 20px;">Images</h3>
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-3">
+      <div class="img-thumbnail text-center">
+        <a href="webapp.png" target="_blank">
+          <img src="webapp.png" alt="Web app homepage" style="width:100%" class="rounded">
+          <div class="caption" style="padding-top: 10px; font-size: 0.95em; height: 60px; text-align: center; display: flex; justify-content: center;">
+            <p style="text-align: center;">Web application homepage.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="img-thumbnail text-center">
+        <a href="webapp2.png" target="_blank">
+          <img src="webapp2.png" alt="Web app stock prices and news." style="width:100%" class="rounded">
+          <div class="caption" style="padding-top: 10px; font-size: 0.95em; height: 60px; text-align: center; display: flex; justify-content: center;">
+            <p style="text-align: center;">Web application plotting stock prices and showing news.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="img-thumbnail text-center">
+        <a href="webapp3.png" target="_blank">
+          <img src="webapp3.png" alt="Web app night mode" style="width:100%" class="rounded">
+          <div class="caption" style="padding-top: 10px; font-size: 0.95em; height: 60px; text-align: center; display: flex; justify-content: center;">
+            <p style="text-align: center;">Web application night mode homepage.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="img-thumbnail text-center">
+        <a href="api.png" target="_blank">
+          <img src="api.png" alt="Stock News Sentiment REST API" style="width:100%" class="rounded">
+          <div class="caption" style="padding-top: 10px; font-size: 0.95em; height: 60px; text-align: center; display: flex; justify-content: center;">
+            <p style="text-align: center;">Stock News Sentiment REST API Swagger documentation.</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
   <div class="row" style="margin-top: 40px;">
@@ -70,71 +116,71 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Text wraping UI changes.
-          <span class="badge bg-primary rounded-pill">5.1.2022</span>
+          <span class="badge rounded-pill">5.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Deploy final changes.
-          <span class="badge bg-primary rounded-pill">3.1.2022</span>
+          <span class="badge rounded-pill">3.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Update UI (responsivity).
-          <span class="badge bg-primary rounded-pill">3.1.2022</span>
+          <span class="badge rounded-pill">3.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Add the calling of the Sentiment API.
-          <span class="badge bg-primary rounded-pill">3.1.2022</span>
+          <span class="badge rounded-pill">3.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Deploy the API.
-          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+          <span class="badge rounded-pill">2.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Create REST API via Flask-RESTX.
-          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+          <span class="badge rounded-pill">2.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Add the showing news.
-          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+          <span class="badge rounded-pill">2.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Change the news API.
-          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+          <span class="badge rounded-pill">2.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Change UI.
-          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+          <span class="badge rounded-pill">2.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Add the plotting of stock prices.
-          <span class="badge bg-primary rounded-pill">2.1.2022</span>
+          <span class="badge rounded-pill">2.1.2022</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Searching libraries and React components.
-          <span class="badge bg-primary rounded-pill">26.12.2021</span>
+          <span class="badge rounded-pill">26.12.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Deploy the template.
-          <span class="badge bg-primary rounded-pill">15.10.2021</span>
+          <span class="badge rounded-pill">15.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Update the template.
-          <span class="badge bg-primary rounded-pill">13.10.2021</span>
+          <span class="badge rounded-pill">13.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           <label>Finding a React template [<a href='https://github.com/rajshekhar26/cleanfolio' target='_blank'>link</a>]</label>
-          <span class="badge bg-primary rounded-pill">13.10.2021</span>
+          <span class="badge rounded-pill">13.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Choosing a task.
-          <span class="badge bg-primary rounded-pill">12.10.2021</span>
+          <span class="badge rounded-pill">12.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Choosing APIs.
-          <span class="badge bg-primary rounded-pill">3.10.2021</span>
+          <span class="badge rounded-pill">3.10.2021</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Describing the app.
-          <span class="badge bg-primary rounded-pill">2.10.2021</span>
+          <span class="badge rounded-pill">2.10.2021</span>
         </li>
       </ul>
     </div>
